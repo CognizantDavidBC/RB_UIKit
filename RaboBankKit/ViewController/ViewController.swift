@@ -19,15 +19,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.loadData { [weak tableView, weak spinner] in
+        viewModel.loadData(onSuccess: { [weak tableView] in
             guard let tableView = tableView else { return }
             UIView.transition(with: tableView, duration: 0.4, options: .transitionCrossDissolve) {
                 tableView.reloadData()
                 tableView.backgroundView = nil
-                spinner?.stopAnimating()
             }
-        }
+        }, onFailure: { [weak self] error in
+            let alert = UIAlertController(title: "Error", message: error.rawValue, preferredStyle: .alert)
+            self?.present(alert, animated: true, completion: nil)
+        })
     }
+    
     
     // MARK: - Methods
     private func registerCell() {

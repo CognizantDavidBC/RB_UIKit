@@ -13,11 +13,20 @@ class ViewModel {
         users[index]
     }
     
-    func loadData(onComplete completed: @escaping () -> Void) {
+    func loadData(onSuccess success: @escaping () -> Void, onFailure failure: @escaping(CsvParseError) -> Void) {
         DispatchQueue.global(qos: .background).async {
-            self.users = UserCsvParser.importCSV()
-            DispatchQueue.main.async {
-                completed()
+            do {
+                self.users = try UserCsvParser.importCSV()
+                
+                DispatchQueue.main.async {
+                    success()
+                }
+            } catch {
+                guard let csvError = error as? CsvParseError else { return }
+                
+                DispatchQueue.main.async {
+                    failure(csvError)
+                }
             }
         }
     }
