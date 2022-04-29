@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D6853BF281BEE0700DB67D0 /* UserCsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6853BE281BEE0700DB67D0 /* UserCsvParser.swift */; };
+		7DB105BF281A6D92008533F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105BE281A6D92008533F1 /* AppDelegate.swift */; };
+		7DB105C1281A6D92008533F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105C0281A6D92008533F1 /* SceneDelegate.swift */; };
+		7DB105C6281A6D92008533F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105C4281A6D92008533F1 /* Main.storyboard */; };
+		7DB105C8281A6D96008533F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105C7281A6D96008533F1 /* Assets.xcassets */; };
+		7DB105CB281A6D96008533F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105C9281A6D96008533F1 /* LaunchScreen.storyboard */; };
+		7DB105D6281A75EF008533F1 /* VC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105D5281A75EF008533F1 /* VC+UITableViewDataSource.swift */; };
+		7DB105D8281A7718008533F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105D7281A7718008533F1 /* ViewController.swift */; };
+		7DB105DB281A79BE008533F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105DA281A79BE008533F1 /* User.swift */; };
+		7DB105DD281A7A33008533F1 /* Double+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105DC281A7A33008533F1 /* Double+Format.swift */; };
+		7DB105E2281A7AC3008533F1 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105E1281A7AC3008533F1 /* issues.csv */; };
+		7DB105E6281A7C37008533F1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105E5281A7C37008533F1 /* ViewModel.swift */; };
+		7DB105EC281ABECE008533F1 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105EA281ABECE008533F1 /* UserTableViewCell.swift */; };
+		7DB105ED281ABECE008533F1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105EB281ABECE008533F1 /* UserTableViewCell.xib */; };
+		7DB105EF281AD128008533F1 /* VC+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105EE281AD127008533F1 /* VC+UITableViewDelegate.swift */; };
+		7DB105F1281BB2FD008533F1 /* testData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105F0281BB2FD008533F1 /* testData.csv */; };
+		7DB105F4281BCFC3008533F1 /* CsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105F3281BCFC3008533F1 /* CsvParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D6853BE281BEE0700DB67D0 /* UserCsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCsvParser.swift; sourceTree = "<group>"; };
+		7DB105BB281A6D92008533F1 /* RaboBankKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaboBankKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB105BE281A6D92008533F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DB105C0281A6D92008533F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7DB105C5281A6D92008533F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DB105C7281A6D96008533F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DB105CA281A6D96008533F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DB105CC281A6D96008533F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB105D5281A75EF008533F1 /* VC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		7DB105D7281A7718008533F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DB105DA281A79BE008533F1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7DB105DC281A7A33008533F1 /* Double+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Format.swift"; sourceTree = "<group>"; };
+		7DB105E1281A7AC3008533F1 /* issues.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues.csv; sourceTree = "<group>"; };
+		7DB105E5281A7C37008533F1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7DB105EA281ABECE008533F1 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		7DB105EB281ABECE008533F1 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		7DB105EE281AD127008533F1 /* VC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		7DB105F0281BB2FD008533F1 /* testData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testData.csv; sourceTree = "<group>"; };
+		7DB105F3281BCFC3008533F1 /* CsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DB105B8281A6D92008533F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DB105B2281A6D92008533F1 = {
+			isa = PBXGroup;
+			children = (
+				7DB105BD281A6D92008533F1 /* RaboBankKit */,
+				7DB105BC281A6D92008533F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DB105BC281A6D92008533F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105BB281A6D92008533F1 /* RaboBankKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB105BD281A6D92008533F1 /* RaboBankKit */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105BE281A6D92008533F1 /* AppDelegate.swift */,
+				7DB105C0281A6D92008533F1 /* SceneDelegate.swift */,
+				7DB105DE281A7A38008533F1 /* Extensions */,
+				7DB105D9281A79B5008533F1 /* Model */,
+				7DB105D2281A75B5008533F1 /* ViewController */,
+				7DB105E4281A7C23008533F1 /* ViewModel */,
+				7DB105F2281BCFA6008533F1 /* Utilities */,
+				7DB105E7281ABD3A008533F1 /* Views */,
+				7DB105E3281A7AC7008533F1 /* Data */,
+				7DB105C7281A6D96008533F1 /* Assets.xcassets */,
+				7DB105C9281A6D96008533F1 /* LaunchScreen.storyboard */,
+				7DB105CC281A6D96008533F1 /* Info.plist */,
+			);
+			path = RaboBankKit;
+			sourceTree = "<group>";
+		};
+		7DB105D2281A75B5008533F1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105D7281A7718008533F1 /* ViewController.swift */,
+				7DB105D5281A75EF008533F1 /* VC+UITableViewDataSource.swift */,
+				7DB105EE281AD127008533F1 /* VC+UITableViewDelegate.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7DB105D9281A79B5008533F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105DA281A79BE008533F1 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DB105DE281A7A38008533F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105DC281A7A33008533F1 /* Double+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7DB105E3281A7AC7008533F1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105F0281BB2FD008533F1 /* testData.csv */,
+				7DB105E1281A7AC3008533F1 /* issues.csv */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7DB105E4281A7C23008533F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105E5281A7C37008533F1 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7DB105E7281ABD3A008533F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105C4281A6D92008533F1 /* Main.storyboard */,
+				7DB105EA281ABECE008533F1 /* UserTableViewCell.swift */,
+				7DB105EB281ABECE008533F1 /* UserTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DB105F2281BCFA6008533F1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7DB105F3281BCFC3008533F1 /* CsvParser.swift */,
+				7D6853BE281BEE0700DB67D0 /* UserCsvParser.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DB105BA281A6D92008533F1 /* RaboBankKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB105CF281A6D96008533F1 /* Build configuration list for PBXNativeTarget "RaboBankKit" */;
+			buildPhases = (
+				7DB105B7281A6D92008533F1 /* Sources */,
+				7DB105B8281A6D92008533F1 /* Frameworks */,
+				7DB105B9281A6D92008533F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaboBankKit;
+			productName = RaboBankKit;
+			productReference = 7DB105BB281A6D92008533F1 /* RaboBankKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DB105B3281A6D92008533F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7DB105BA281A6D92008533F1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7DB105B6281A6D92008533F1 /* Build configuration list for PBXProject "RaboBankKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DB105B2281A6D92008533F1;
+			productRefGroup = 7DB105BC281A6D92008533F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DB105BA281A6D92008533F1 /* RaboBankKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DB105B9281A6D92008533F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB105E2281A7AC3008533F1 /* issues.csv in Resources */,
+				7DB105CB281A6D96008533F1 /* LaunchScreen.storyboard in Resources */,
+				7DB105C8281A6D96008533F1 /* Assets.xcassets in Resources */,
+				7DB105C6281A6D92008533F1 /* Main.storyboard in Resources */,
+				7DB105F1281BB2FD008533F1 /* testData.csv in Resources */,
+				7DB105ED281ABECE008533F1 /* UserTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DB105B7281A6D92008533F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB105D8281A7718008533F1 /* ViewController.swift in Sources */,
+				7DB105F4281BCFC3008533F1 /* CsvParser.swift in Sources */,
+				7DB105EC281ABECE008533F1 /* UserTableViewCell.swift in Sources */,
+				7D6853BF281BEE0700DB67D0 /* UserCsvParser.swift in Sources */,
+				7DB105D6281A75EF008533F1 /* VC+UITableViewDataSource.swift in Sources */,
+				7DB105DD281A7A33008533F1 /* Double+Format.swift in Sources */,
+				7DB105DB281A79BE008533F1 /* User.swift in Sources */,
+				7DB105BF281A6D92008533F1 /* AppDelegate.swift in Sources */,
+				7DB105C1281A6D92008533F1 /* SceneDelegate.swift in Sources */,
+				7DB105E6281A7C37008533F1 /* ViewModel.swift in Sources */,
+				7DB105EF281AD128008533F1 /* VC+UITableViewDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7DB105C4281A6D92008533F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB105C5281A6D92008533F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DB105C9281A6D96008533F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB105CA281A6D96008533F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DB105CD281A6D96008533F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DB105CE281A6D96008533F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DB105D0281A6D96008533F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7WG6HX8M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RaboBankKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RaboBankKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DB105D1281A6D96008533F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7WG6HX8M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RaboBankKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RaboBankKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DB105B6281A6D92008533F1 /* Build configuration list for PBXProject "RaboBankKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB105CD281A6D96008533F1 /* Debug */,
+				7DB105CE281A6D96008533F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB105CF281A6D96008533F1 /* Build configuration list for PBXNativeTarget "RaboBankKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB105D0281A6D96008533F1 /* Debug */,
+				7DB105D1281A6D96008533F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DB105B3281A6D92008533F1 /* Project object */;
+}
