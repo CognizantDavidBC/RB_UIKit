@@ -1,6 +1,6 @@
 import Foundation
 
-struct User {
+struct User: Equatable {
     let name: String
     let surName: String
     let issueCount: Int

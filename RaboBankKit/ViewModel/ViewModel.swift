@@ -16,7 +16,7 @@ class ViewModel {
     func loadData(onSuccess success: @escaping () -> Void, onFailure failure: @escaping(CsvParseError) -> Void) {
         DispatchQueue.global(qos: .background).async {
             do {
-                self.users = try UserCsvParser.importCSV()
+                self.users = try UserCsvParser().importCSV()
                 
                 DispatchQueue.main.async {
                     success()
