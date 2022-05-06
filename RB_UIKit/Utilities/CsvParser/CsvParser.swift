@@ -3,11 +3,14 @@ import UIKit
 protocol CsvParser {
     associatedtype T
     
-    var fileName: String { get set }
-    var lineSeparator: String { get set }
-    var componentSeparator: String { get set }
+    var fileName: String { get }
+    var lineSeparator: String { get }
+    var componentSeparator: String { get }
     
-    func parseCsvData(from data: [[String]]) throws -> [T]
+    static var rowItems: Int { get }
+    static var hasHeading: Bool { get }
+    
+    static func parseCsvData(from data: [[String]]) throws -> [T]
 }
 
 extension CsvParser {
@@ -18,7 +21,7 @@ extension CsvParser {
     func importCSV() throws -> [T] {
         let rawData = try loadFile(from: fileUrl)
         let decodedData = try decode(rawData)
-        let data = try parseCsvData(from: decodedData)
+        let data = try Self.parseCsvData(from: decodedData)
         return data
     }
     
@@ -29,10 +32,13 @@ extension CsvParser {
     }
     
     private func decode(_ rawData: String) throws -> [[String]] {
+        guard rawData.contains(lineSeparator) else { throw CsvParseError.wrongFormat }
         var lines = rawData.components(separatedBy: lineSeparator)
-        guard lines.count > 2 else { throw CsvParseError.wrongFormat }
-        lines.removeFirst()
         lines.removeAll { $0.isEmpty }
+        if Self.hasHeading {
+            guard !lines.isEmpty else { throw CsvParseError.wrongFormat }
+        }
+        lines.removeFirst()
         guard lines.first!.contains(componentSeparator) else { throw CsvParseError.wrongFormat }
         return lines.map { $0.components(separatedBy: componentSeparator) }
     }

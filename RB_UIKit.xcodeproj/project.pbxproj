@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D67C34F282507A600A7A661 /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67C34E282507A600A7A661 /* ModelUser.swift */; };
+		7D67C35328251AE800A7A661 /* noData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D67C35228251AE800A7A661 /* noData.csv */; };
+		7D67C35428251AEE00A7A661 /* noData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D67C35228251AE800A7A661 /* noData.csv */; };
 		7D6853BF281BEE0700DB67D0 /* UserCsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6853BE281BEE0700DB67D0 /* UserCsvParser.swift */; };
 		7D6853C2281BF79500DB67D0 /* CsvParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6853C1281BF79500DB67D0 /* CsvParseError.swift */; };
 		7D6853CA28210A9700DB67D0 /* CsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6853C928210A9700DB67D0 /* CsvParser.swift */; };
-		7D6853D32821390700DB67D0 /* wrongSeparator.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D6853D22821390700DB67D0 /* wrongSeparator.csv */; };
-		7D6853D52821393F00DB67D0 /* wrongSeparator.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D6853D22821390700DB67D0 /* wrongSeparator.csv */; };
+		7D6853D32821390700DB67D0 /* testFile.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D6853D22821390700DB67D0 /* testFile.csv */; };
+		7D6853D52821393F00DB67D0 /* testFile.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D6853D22821390700DB67D0 /* testFile.csv */; };
 		7D6853D928214BAB00DB67D0 /* CsvUserParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6853D828214BAB00DB67D0 /* CsvUserParser.swift */; };
 		7DB105BF281A6D92008533F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105BE281A6D92008533F1 /* AppDelegate.swift */; };
 		7DB105C1281A6D92008533F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB105C0281A6D92008533F1 /* SceneDelegate.swift */; };
@@ -42,11 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D67C34E282507A600A7A661 /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
+		7D67C35228251AE800A7A661 /* noData.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = noData.csv; sourceTree = "<group>"; };
 		7D6853BE281BEE0700DB67D0 /* UserCsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCsvParser.swift; sourceTree = "<group>"; };
 		7D6853C1281BF79500DB67D0 /* CsvParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParseError.swift; sourceTree = "<group>"; };
 		7D6853C728210A9700DB67D0 /* RB_UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RB_UIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6853C928210A9700DB67D0 /* CsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParser.swift; sourceTree = "<group>"; };
-		7D6853D22821390700DB67D0 /* wrongSeparator.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = wrongSeparator.csv; sourceTree = "<group>"; };
+		7D6853D22821390700DB67D0 /* testFile.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = testFile.csv; sourceTree = "<group>"; };
 		7D6853D828214BAB00DB67D0 /* CsvUserParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvUserParser.swift; sourceTree = "<group>"; };
 		7DB105BB281A6D92008533F1 /* RB_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RB_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB105BE281A6D92008533F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,9 +104,11 @@
 		7D6853C828210A9700DB67D0 /* RB_UIKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				7D67C34E282507A600A7A661 /* ModelUser.swift */,
 				7D6853C928210A9700DB67D0 /* CsvParser.swift */,
 				7D6853D828214BAB00DB67D0 /* CsvUserParser.swift */,
-				7D6853D22821390700DB67D0 /* wrongSeparator.csv */,
+				7D6853D22821390700DB67D0 /* testFile.csv */,
+				7D67C35228251AE800A7A661 /* noData.csv */,
 			);
 			path = RB_UIKitTests;
 			sourceTree = "<group>";
@@ -285,7 +292,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6853D32821390700DB67D0 /* wrongSeparator.csv in Resources */,
+				7D6853D32821390700DB67D0 /* testFile.csv in Resources */,
+				7D67C35328251AE800A7A661 /* noData.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +304,10 @@
 				7DB105E2281A7AC3008533F1 /* issues.csv in Resources */,
 				7DB105CB281A6D96008533F1 /* LaunchScreen.storyboard in Resources */,
 				7DB105C8281A6D96008533F1 /* Assets.xcassets in Resources */,
+				7D67C35428251AEE00A7A661 /* noData.csv in Resources */,
 				7DB105C6281A6D92008533F1 /* Main.storyboard in Resources */,
 				7DB105F1281BB2FD008533F1 /* testData.csv in Resources */,
-				7D6853D52821393F00DB67D0 /* wrongSeparator.csv in Resources */,
+				7D6853D52821393F00DB67D0 /* testFile.csv in Resources */,
 				7DB105ED281ABECE008533F1 /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D67C34F282507A600A7A661 /* ModelUser.swift in Sources */,
 				7D6853D928214BAB00DB67D0 /* CsvUserParser.swift in Sources */,
 				7D6853CA28210A9700DB67D0 /* CsvParser.swift in Sources */,
 			);

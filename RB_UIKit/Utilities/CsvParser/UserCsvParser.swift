@@ -1,14 +1,23 @@
 import Foundation
 
 struct UserCsvParser: CsvParser {
-    var fileName: String = "testData"
-    var lineSeparator: String = "\n"
-    var componentSeparator: String = ";"
+    let fileName: String
+    let lineSeparator: String
+    let componentSeparator: String
     
-    func parseCsvData(from data: [[String]]) throws -> [User] {
+    static let rowItems = 4
+    static let hasHeading = true
+    
+    init(csvFileName file: String = "testData", lineSeparator: String = "\n", componentSeparator: String = ";") {
+        fileName = file
+        self.lineSeparator = lineSeparator
+        self.componentSeparator = componentSeparator
+    }
+    
+    static func parseCsvData(from data: [[String]]) throws -> [User] {
         var users: [User] = []
         for line in data {
-            guard line.count == 4 else { throw CsvParseError.corruptDataEntry }
+            guard line.count == UserCsvParser.rowItems else { throw CsvParseError.corruptDataEntry }
             do {
                 users.append(try createUser(fromComponents: line))
             } catch {
@@ -18,7 +27,7 @@ struct UserCsvParser: CsvParser {
         return users
     }
     
-    private func createUser(fromComponents components: [String]) throws -> User {
+    private static func createUser(fromComponents components: [String]) throws -> User {
         let name = components[0]
         let surName = components[1]
         guard let issueCount = Int(components[2]) else { throw CsvParseError.corruptCountEntry }
