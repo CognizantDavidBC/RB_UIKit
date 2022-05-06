@@ -44,11 +44,11 @@
 /* Begin PBXFileReference section */
 		7D6853BE281BEE0700DB67D0 /* UserCsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCsvParser.swift; sourceTree = "<group>"; };
 		7D6853C1281BF79500DB67D0 /* CsvParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParseError.swift; sourceTree = "<group>"; };
-		7D6853C728210A9700DB67D0 /* RaboBankKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaboBankKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6853C728210A9700DB67D0 /* RB_UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RB_UIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6853C928210A9700DB67D0 /* CsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParser.swift; sourceTree = "<group>"; };
 		7D6853D22821390700DB67D0 /* wrongSeparator.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = wrongSeparator.csv; sourceTree = "<group>"; };
 		7D6853D828214BAB00DB67D0 /* CsvUserParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvUserParser.swift; sourceTree = "<group>"; };
-		7DB105BB281A6D92008533F1 /* RaboBankKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaboBankKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB105BB281A6D92008533F1 /* RB_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RB_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB105BE281A6D92008533F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DB105C0281A6D92008533F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7DB105C5281A6D92008533F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,21 +96,21 @@
 			path = CsvParser;
 			sourceTree = "<group>";
 		};
-		7D6853C828210A9700DB67D0 /* RaboBankKitTests */ = {
+		7D6853C828210A9700DB67D0 /* RB_UIKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				7D6853C928210A9700DB67D0 /* CsvParser.swift */,
 				7D6853D828214BAB00DB67D0 /* CsvUserParser.swift */,
 				7D6853D22821390700DB67D0 /* wrongSeparator.csv */,
 			);
-			path = RaboBankKitTests;
+			path = RB_UIKitTests;
 			sourceTree = "<group>";
 		};
 		7DB105B2281A6D92008533F1 = {
 			isa = PBXGroup;
 			children = (
-				7DB105BD281A6D92008533F1 /* RaboBankKit */,
-				7D6853C828210A9700DB67D0 /* RaboBankKitTests */,
+				7DB105BD281A6D92008533F1 /* RB_UIKit */,
+				7D6853C828210A9700DB67D0 /* RB_UIKitTests */,
 				7DB105BC281A6D92008533F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,13 +118,13 @@
 		7DB105BC281A6D92008533F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DB105BB281A6D92008533F1 /* RaboBankKit.app */,
-				7D6853C728210A9700DB67D0 /* RaboBankKitTests.xctest */,
+				7DB105BB281A6D92008533F1 /* RB_UIKit.app */,
+				7D6853C728210A9700DB67D0 /* RB_UIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7DB105BD281A6D92008533F1 /* RaboBankKit */ = {
+		7DB105BD281A6D92008533F1 /* RB_UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				7DB105BE281A6D92008533F1 /* AppDelegate.swift */,
@@ -140,7 +140,7 @@
 				7DB105C9281A6D96008533F1 /* LaunchScreen.storyboard */,
 				7DB105CC281A6D96008533F1 /* Info.plist */,
 			);
-			path = RaboBankKit;
+			path = RB_UIKit;
 			sourceTree = "<group>";
 		};
 		7DB105D2281A75B5008533F1 /* ViewController */ = {
@@ -207,9 +207,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D6853C628210A9700DB67D0 /* RaboBankKitTests */ = {
+		7D6853C628210A9700DB67D0 /* RB_UIKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D6853CD28210A9700DB67D0 /* Build configuration list for PBXNativeTarget "RaboBankKitTests" */;
+			buildConfigurationList = 7D6853CD28210A9700DB67D0 /* Build configuration list for PBXNativeTarget "RB_UIKitTests" */;
 			buildPhases = (
 				7D6853C328210A9700DB67D0 /* Sources */,
 				7D6853C428210A9700DB67D0 /* Frameworks */,
@@ -220,14 +220,14 @@
 			dependencies = (
 				7D6853CC28210A9700DB67D0 /* PBXTargetDependency */,
 			);
-			name = RaboBankKitTests;
+			name = RB_UIKitTests;
 			productName = RaboBankKitTests;
-			productReference = 7D6853C728210A9700DB67D0 /* RaboBankKitTests.xctest */;
+			productReference = 7D6853C728210A9700DB67D0 /* RB_UIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7DB105BA281A6D92008533F1 /* RaboBankKit */ = {
+		7DB105BA281A6D92008533F1 /* RB_UIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DB105CF281A6D96008533F1 /* Build configuration list for PBXNativeTarget "RaboBankKit" */;
+			buildConfigurationList = 7DB105CF281A6D96008533F1 /* Build configuration list for PBXNativeTarget "RB_UIKit" */;
 			buildPhases = (
 				7DB105B7281A6D92008533F1 /* Sources */,
 				7DB105B8281A6D92008533F1 /* Frameworks */,
@@ -237,9 +237,9 @@
 			);
 			dependencies = (
 			);
-			name = RaboBankKit;
+			name = RB_UIKit;
 			productName = RaboBankKit;
-			productReference = 7DB105BB281A6D92008533F1 /* RaboBankKit.app */;
+			productReference = 7DB105BB281A6D92008533F1 /* RB_UIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -261,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7DB105B6281A6D92008533F1 /* Build configuration list for PBXProject "RaboBankKit" */;
+			buildConfigurationList = 7DB105B6281A6D92008533F1 /* Build configuration list for PBXProject "RB_UIKit" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -274,8 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DB105BA281A6D92008533F1 /* RaboBankKit */,
-				7D6853C628210A9700DB67D0 /* RaboBankKitTests */,
+				7DB105BA281A6D92008533F1 /* RB_UIKit */,
+				7D6853C628210A9700DB67D0 /* RB_UIKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -339,7 +339,7 @@
 /* Begin PBXTargetDependency section */
 		7D6853CC28210A9700DB67D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7DB105BA281A6D92008533F1 /* RaboBankKit */;
+			target = 7DB105BA281A6D92008533F1 /* RB_UIKit */;
 			targetProxy = 7D6853CB28210A9700DB67D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -378,12 +378,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RaboBankKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.cognizant.RB-UIKitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaboBankKit.app/RaboBankKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RB_UIKit.app/RB_UIKit";
 			};
 			name = Debug;
 		};
@@ -401,12 +401,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RaboBankKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.cognizant.RB-UIKitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaboBankKit.app/RaboBankKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RB_UIKit.app/RB_UIKit";
 			};
 			name = Release;
 		};
@@ -535,7 +535,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7WG6HX8M9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RaboBankKit/Info.plist;
+				INFOPLIST_FILE = RB_UIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -546,7 +546,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RaboBankKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RBUIK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -563,7 +563,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7WG6HX8M9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RaboBankKit/Info.plist;
+				INFOPLIST_FILE = RB_UIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -574,7 +574,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RaboBankKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.cognizant.RBUIK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -585,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7D6853CD28210A9700DB67D0 /* Build configuration list for PBXNativeTarget "RaboBankKitTests" */ = {
+		7D6853CD28210A9700DB67D0 /* Build configuration list for PBXNativeTarget "RB_UIKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D6853CE28210A9700DB67D0 /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DB105B6281A6D92008533F1 /* Build configuration list for PBXProject "RaboBankKit" */ = {
+		7DB105B6281A6D92008533F1 /* Build configuration list for PBXProject "RB_UIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DB105CD281A6D96008533F1 /* Debug */,
@@ -603,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DB105CF281A6D96008533F1 /* Build configuration list for PBXNativeTarget "RaboBankKit" */ = {
+		7DB105CF281A6D96008533F1 /* Build configuration list for PBXNativeTarget "RB_UIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DB105D0281A6D96008533F1 /* Debug */,

@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  RaboBankKit
-//
-//  Created by m_944879 on 28/4/22.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

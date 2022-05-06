@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7DB105BA281A6D92008533F1"
-               BuildableName = "RaboBankKit.app"
-               BlueprintName = "RaboBankKit"
-               ReferencedContainer = "container:RaboBankKit.xcodeproj">
+               BuildableName = "RB_UIKit.app"
+               BlueprintName = "RB_UIKit"
+               ReferencedContainer = "container:RB_UIKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D6853C628210A9700DB67D0"
-               BuildableName = "RaboBankKitTests.xctest"
-               BlueprintName = "RaboBankKitTests"
-               ReferencedContainer = "container:RaboBankKit.xcodeproj">
+               BuildableName = "RB_UIKitTests.xctest"
+               BlueprintName = "RB_UIKitTests"
+               ReferencedContainer = "container:RB_UIKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7DB105BA281A6D92008533F1"
-            BuildableName = "RaboBankKit.app"
-            BlueprintName = "RaboBankKit"
-            ReferencedContainer = "container:RaboBankKit.xcodeproj">
+            BuildableName = "RB_UIKit.app"
+            BlueprintName = "RB_UIKit"
+            ReferencedContainer = "container:RB_UIKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7DB105BA281A6D92008533F1"
-            BuildableName = "RaboBankKit.app"
-            BlueprintName = "RaboBankKit"
-            ReferencedContainer = "container:RaboBankKit.xcodeproj">
+            BuildableName = "RB_UIKit.app"
+            BlueprintName = "RB_UIKit"
+            ReferencedContainer = "container:RB_UIKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

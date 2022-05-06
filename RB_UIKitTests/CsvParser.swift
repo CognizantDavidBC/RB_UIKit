@@ -1,5 +1,5 @@
 import XCTest
-@testable import RaboBankKit
+@testable import RB_UIKit
 
 class CsvParser: XCTestCase {
     func test_fileNotFound() {
