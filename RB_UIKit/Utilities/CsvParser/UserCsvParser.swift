@@ -8,7 +8,8 @@ struct UserCsvParser: CsvParser {
     static let rowItems = 4
     static let hasHeading = true
     
-    init(csvFileName file: String = "testData", lineSeparator: String = "\n", componentSeparator: String = ";") {
+    init(csvFileName file: String = "issues", lineSeparator: String = "\r", componentSeparator: String = ";") {
+//    init(csvFileName file: String = "testData", lineSeparator: String = "\n", componentSeparator: String = ";") {
         fileName = file
         self.lineSeparator = lineSeparator
         self.componentSeparator = componentSeparator
