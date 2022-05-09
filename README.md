@@ -1,5 +1,7 @@
 # UIKit Assignment
 
+![Screenshot simulator](https://user-images.githubusercontent.com/88148565/167357820-c1c1a386-f0b9-4dc7-89b7-42d20b6f8b2e.png)
+
 ## Architecture: **MVVM**
 - Model: `User`
 - View: `UITableView` & `UIViewController`
